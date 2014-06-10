@@ -98,17 +98,60 @@ textarea {
    ========================================================================== */
 
 
+/*
+.pie-slice {
+	height:80px;
+	background-color: aqua;
+}
 
+.pie-fill {
+	display:inline-block;
+	width: 80%;
+	height: 80px;
+	background-color: pink;
+	
+}
+*/
 
+.pie,
+.pie-slice {
+	position: relative;
+	
+}
 
+.pie-slice,
+.pie-fill {
+	border-radius: 100%;
+	
+}
 
+.pie-slice {
+	height: 200px;
+	width: 200px;
+	border: 20px solid #2adbdb;
+	
+}
 
+.pie-fill {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 200px;
+	height: 200px;
+	border: 20px solid pink;
+	clip: rect(0, 160px, 160px, 0);
+	-webkit-transform: rotate(90deg);
+			transform: rotate(90deg);
+}
 
-
-
-
-
-
+/*
+position
+- position
+- top: ect.
+display
+- display: block, etc
+- overflow
+*/
 
 
 
